@@ -1,0 +1,41 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Search engine library",
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest"
+  },
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klubkovkv/js-algorithms-project-lvl1.git"
+  },
+  "author": "klubkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klubkovkv/js-algorithms-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/klubkovkv/js-algorithms-project-lvl1#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@jest/globals": "^28.1.0",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.1",
+    "jest": "^28.1.0",
+    "jest-cli": "^28.1.0",
+    "npm-check-updates": "^13.1.1",
+    "simple-git-hooks": "^2.8.0"
+  }
+}
