@@ -23,3 +23,13 @@ test('documents are empty', () => {
   expect(searchEngine.search('')).toStrictEqual([]);
 });
 
+test('search regardless of punctuation marks', () => {
+  expect(searchEngine.search('pint')).toStrictEqual([{
+    id: 'doc1',
+    text: "I can't shoot straight unless I've had a pint!"
+  }]);
+  expect(searchEngine.search('pint!')).toStrictEqual([{
+    id: 'doc1',
+    text: "I can't shoot straight unless I've had a pint!"
+  }]);
+});
